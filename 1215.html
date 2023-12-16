@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="1215.css">
+</head>
+<body>
+
+	<h1>Interactive Buttons</h1>
+
+	<div class="button-container">
+		<input type="button" id="alertButton1" value="1st button" onClick="alert(firstInput);">
+		<input type="button" id="alertButton2" value="2nd button" onClick="alert(secondInput);">
+		<input type="button" id="colorButtonBlue" value="blue" onclick="document.body.style.backgroundColor = 'blue';">
+		<input type="button" id="colorButtonGreen" value="green" onclick="document.body.style.backgroundColor = 'green';">
+		<input type="button" id="resetButton" value="Reset Background" onclick="resetBackground();">
+	</div>
+
+	<script>
+		var firstInput = window.prompt("Enter first input");
+		var secondInput = window.prompt("Enter second input");
+
+		if (parseInt(firstInput) > parseInt(secondInput)) {
+        	document.body.style.backgroundColor = 'lightblue';
+        	document.writeln(firstInput + " > " + secondInput);
+   	 	} else if (parseInt(secondInput) > parseInt(firstInput)) {
+        	document.body.style.backgroundColor = 'orange';
+        	document.writeln(secondInput + " > " + firstInput);
+    	} else {
+        	document.body.style.backgroundColor = 'lightyellow';
+        	document.writeln(secondInput + " == " + firstInput);
+    	}
+
+		function resetBackground() {
+    	document.body.style.backgroundColor = ''; 
+		}
+	</script>
+</body>
+</html>

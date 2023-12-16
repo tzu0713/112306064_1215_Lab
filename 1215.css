@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: none; 
+    border-radius: 10px; 
+}
+
+#alertButton1 {
+    background-color: darkred;
+    color: #fff;
+}
+
+#alertButton2 {
+    background-color: skyblue;
+    color: #fff;
+}
+
+#colorButtonBlue {
+    background-color: darkblue;
+    color: #fff;
+}
+
+#colorButtonGreen {
+    background-color: darkgreen;
+    color: #fff;
+}
+
+#resetButton{
+    background-color: lightseagreen;
+    color: #fff;
+}
+
+input[type="button"]:hover {
+    background-color: #555;
+}
